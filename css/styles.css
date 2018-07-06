@@ -1,0 +1,220 @@
+body {
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 14px;
+}
+
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  display: grid;
+  grid-template-columns: 300px calc(100% - 300px);
+  grid-template-rows: 100%;
+}
+
+#left-rail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 34px;
+  background-color: #fbfbfb;
+}
+
+#left-rail #personal-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#left-rail #personal-info-container #avatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 34px;
+}
+
+#left-rail #personal-info-container #info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  color: #545d63;
+}
+
+#left-rail #personal-info-container #info .name {
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #a29572;
+  letter-spacing: 1px;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+#left-rail #personal-info-container #info #contact-info {
+  margin-top: 14px;
+}
+
+#left-rail #personal-info-container #info #contact-info p {
+  display: flex;
+  align-items: center;
+}
+
+#left-rail #personal-info-container #info #contact-info span {
+  font-size: 0.88em;
+  line-height: 1.5em;
+  color: #545d63;
+}
+
+#left-rail #personal-info-container #info #contact-info a {
+  text-decoration: none;
+  font-size: 0.88em;
+  line-height: 1.5em;
+  color: #545d63;
+}
+
+#left-rail #personal-info-container #info #contact-info a:link {
+  color: #545d63;
+}
+
+#left-rail #personal-info-container #info #contact-info a:visited {
+  color: #545d63;
+}
+
+#left-rail #personal-info-container #info #contact-info #location {
+  margin-bottom: 8px;
+}
+
+#left-rail #personal-info-container #info #contact-info #map-marker {
+  width: 22px;
+  height: 22px;
+  margin-left: -4px;
+}
+
+#left-rail #personal-info-container #info #icons-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 22px;
+}
+
+#left-rail #personal-info-container #info #icons-wrapper .icon {
+  width: 24px;
+  height: 24px;
+  margin: 4px;
+  cursor: pointer;
+}
+
+#left-rail #personal-info-container #info #icons-wrapper .icon:first-of-type {
+  margin-left: 0px;
+}
+
+#left-rail #personal-info-container #info #icons-wrapper .icon:hover {
+  width: 26px;
+  height: 26px;
+  margin: 3px;
+}
+
+#left-rail #personal-info-container #info #icons-wrapper .icon:first-of-type:hover {
+  margin-left: 0px;
+  margin-right: 2px;
+}
+
+#right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 34px 68px;
+  overflow-y: scroll;
+}
+
+#right-container h2 {
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+#right-container h2#resume {
+  font-size: 2.4em;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+#right-container p#resume-description {
+  margin-bottom: 32px;
+}
+
+#right-container .experience {
+  font-size: 1em;
+}
+
+#right-container .experience {
+  margin-bottom: 34px;
+}
+
+#right-container .experience h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+	/* color: #ff7a86; */
+  color: #a29572;
+  margin-bottom: 5px;
+}
+
+#right-container .experience a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#right-container .experience a.link-org {
+  font-weight: 600;
+}
+
+#right-container .experience h4 {
+  font-weight: 600;
+}
+
+#right-container .experience h4, p {
+  line-height: 1.5em;
+}
+
+#right-container .experience p:last-of-type {
+  margin-top: 10px;
+  line-height: 1.4em;
+}
+
+@media print {
+
+  body {
+    font-size: 16px;
+  }
+
+  #left-rail {
+    padding: 68px 34px;
+    background-color: #fbfbfb;
+  }
+
+  #left-rail #personal-info-container #avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  #left-rail #personal-info-container #info .name {
+    font-size: 1.2em;
+  }
+
+  #left-rail #personal-info-container #info #contact-info span {
+    font-size: 1em;
+  }
+
+  #left-rail #personal-info-container #info #contact-info a {
+    font-size: 1em;
+  }
+
+  #right-container {
+    padding: 68px;
+    overflow-y: visible;
+  }
+}
