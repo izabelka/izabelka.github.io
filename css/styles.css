@@ -192,7 +192,7 @@ body {
   }
 
   #left-rail {
-    padding: 68px 34px;
+    padding: 60px 34px;
     background-color: #fbfbfb;
   }
 
@@ -214,7 +214,7 @@ body {
   }
 
   #right-container {
-    padding: 68px;
+    padding: 60px 68px;
     overflow-y: visible;
   }
 }
